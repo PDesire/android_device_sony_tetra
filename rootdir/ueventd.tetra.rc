@@ -1,0 +1,90 @@
+/dev/graphics/fb0         0660   system     graphics
+/dev/fb0                  0660   system     graphics
+
+# for MM memory
+/dev/ion                  0666   system     graphics
+
+#for V3D
+/dev/v3d                  0666   system     graphics
+/dev/pmem                 0660   system     graphics
+
+# for Java
+/dev/mm_v3d               0666   system     graphics
+/dev/mm_isp               0660   system     camera
+/dev/mm_isp2              0660   system     camera
+/dev/mm_interlock         0666   system     graphics
+/dev/mm_h264              0660   media      media
+/dev/h264_ol              0660   media      media
+
+# For audio
+/dev/bcm_voip_chrdev      0660   system     system
+/dev/snd/controlC0        0660   system     system
+
+# Sensor HUB
+/dev/em718x-0             0440   system     input
+/dev/em718x-wake-0        0440   system     input
+
+# set input device rules for sensors
+/sys/devices/virtual/input/input*   0dbutton        0660  root   input
+/sys/devices/virtual/input/input*   bandwidth       0660  root   input
+/sys/devices/virtual/input/input*   configarea      0660  root   input
+/sys/devices/virtual/input/input*   data            0660  root   input
+/sys/devices/virtual/input/input*   delay           0660  root   input
+/sys/devices/virtual/input/input*   doreflash       0660  root   input
+/sys/devices/virtual/input/input*   enable_als      0660  root   input
+/sys/devices/virtual/input/input*   enable_int      0660  root   input
+/sys/devices/virtual/input/input*   fast_calibration_x 0660  root   input
+/sys/devices/virtual/input/input*   fast_calibration_y 0660  root   input
+/sys/devices/virtual/input/input*   fast_calibration_z 0660  root   input
+/sys/devices/virtual/input/input*   fflush          0660  root   input
+/sys/devices/virtual/input/input*   fifo_wake       0660  system input
+/sys/devices/virtual/input/input*   flat_hold_time  0660  root   input
+/sys/devices/virtual/input/input*   flat_theta      0660  root   input
+/sys/devices/virtual/input/input*   full_pm_cycle   0660  root   input
+/sys/devices/virtual/input/input*   high_g_duration 0660  root   input
+/sys/devices/virtual/input/input*   high_g_threshold 0660  root   input
+/sys/devices/virtual/input/input*   imagename       0660  root   input
+/sys/devices/virtual/input/input*   imagesize       0660  root   input
+/sys/devices/virtual/input/input*   int_mode        0660  root   input
+/sys/devices/virtual/input/input*   low_g_duration  0660  root   input
+/sys/devices/virtual/input/input*   low_g_threshold 0660  root   input
+/sys/devices/virtual/input/input*   mode            0660  system input
+/sys/devices/virtual/input/input*   nomot_duration  0660  root   input
+/sys/devices/virtual/input/input*   nomot_threshold 0660  root   input
+/sys/devices/virtual/input/input*   offset          0660  root   input
+/sys/devices/virtual/input/input*   orient_blocking 0660  root   input
+/sys/devices/virtual/input/input*   orient_hyst     0660  root   input
+/sys/devices/virtual/input/input*   orient_mode     0660  root   input
+/sys/devices/virtual/input/input*   orient_theta    0660  root   input
+/sys/devices/virtual/input/input*   poll            0660  system input
+/sys/devices/virtual/input/input*   range           0660  root   input
+/sys/devices/virtual/input/input*   readconfig      0660  root   input
+/sys/devices/virtual/input/input*   reg             0660  root   input
+/sys/devices/virtual/input/input*   reset           0660  root   input
+/sys/devices/virtual/input/input*   rmidev/data     0660  root   input
+/sys/devices/virtual/input/input*   rmidev/intr_mask 0660  root  input
+/sys/devices/virtual/input/input*   rmidev/open     0660  root   input
+/sys/devices/virtual/input/input*   rmidev/pid      0660  root   input
+/sys/devices/virtual/input/input*   rmidev/release  0660  root   input
+/sys/devices/virtual/input/input*   rmidev/term     0660  root   input
+/sys/devices/virtual/input/input*   selftest        0660  root   input
+/sys/devices/virtual/input/input*   slope_duration  0660  root   input
+/sys/devices/virtual/input/input*   slope_threshold 0660  root   input
+/sys/devices/virtual/input/input*   suspend         0660  root   input
+/sys/devices/virtual/input/input*   tap_duration    0660  root   input
+/sys/devices/virtual/input/input*   tap_quiet       0660  root   input
+/sys/devices/virtual/input/input*   tap_samp        0660  root   input
+/sys/devices/virtual/input/input*   tap_shock       0660  root   input
+/sys/devices/virtual/input/input*   tap_threshold   0660  root   input
+/sys/devices/virtual/input/input*   wake_allow      0660  root   input
+/sys/devices/virtual/input/input*   wake_gesture    0660  root   input
+/sys/devices/virtual/input/input*   writeconfig     0660  root   input
+/sys/devices/platform/3e018000.i2c/i2c-2/2-0028/input* sensor/enable 0660  system input
+/sys/devices/platform/3e018000.i2c/i2c-2/2-0028/input* sensor/rate   0660  system input
+/sys/devices/platform/3e018000.i2c/i2c-2/2-0028 rate   0660  system input
+/sys/devices/platform/3e018000.i2c/i2c-2/2-0028 report 0660  system input
+/sys/devices/platform/3e018000.i2c/i2c-2/2-0028 reset  0660  system input
+/sys/devices/platform/3e018000.i2c/i2c-2/2-0028 fifo_size 0660 system input
+/sys/devices/platform/3e018000.i2c/i2c-2/2-0028 wuff 0660 system input
+/sys/devices/platform/3e018000.i2c/i2c-2/2-0028 parameters 0660 system input
+/sys/devices/platform/3e018000.i2c/i2c-2/2-0028 firmware 0220 system input
