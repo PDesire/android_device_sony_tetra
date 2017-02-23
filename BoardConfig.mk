@@ -84,8 +84,10 @@ BUILD_KERNEL := true
 include device/sony/common-headers/KernelHeaders.mk
 -include device/sony/common-kernel/KernelConfig.mk
 
+
+# Useless if we have a Broadcom CPU
 # Include build helpers for QCOM proprietary
--include vendor/qcom/proprietary/common/build/proprietary-build.mk
+#-include vendor/qcom/proprietary/common/build/proprietary-build.mk
 
 # SELinux
 include device/sony/sepolicy/sepolicy.mk
